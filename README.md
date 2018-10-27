@@ -1,7 +1,7 @@
 # Slim.Framework.PHP.Example
 
 Example Slim Framework :
-Middleware, Route
+Middleware, Route, Oauth2
 
 Setting Nginx Web Server:
 
