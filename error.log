@@ -1,0 +1,270 @@
+2018/10/04 21:57:25 [error] 10984#332: *20 FastCGI sent in stderr: "PHP Notice:  Undefined variable: helper in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 13
+PHP Fatal error:  Uncaught Error: Call to a member function Hello() on null in D:\PHPProject\Api.Slim.Framework\src\public\index.php:13
+Stack trace:
+#0 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(41): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Route.php(325): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(114): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Route.php(297): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 D:\PHPProject\Api.Slim.Framework\src\vendo in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 13" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "GET /hello/udin HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/04 22:00:16 [error] 10984#332: *25 FastCGI sent in stderr: "PHP Notice:  Undefined variable: app in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 9
+PHP Fatal error:  Uncaught Error: Call to a member function getContainer() on null in D:\PHPProject\Api.Slim.Framework\src\public\index.php:9
+Stack trace:
+#0 {main}
+  thrown in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "GET /hello/udin HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 18:34:46 [error] 1808#15332: *1 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class 'authorizationMiddleware' not found in D:\PHPProject\Api.Slim.Framework\src\public\index.php:23
+Stack trace:
+#0 {main}
+  thrown in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 23" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "GET /hello/udin HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 18:34:47 [error] 1808#15332: *3 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class 'authorizationMiddleware' not found in D:\PHPProject\Api.Slim.Framework\src\public\index.php:23
+Stack trace:
+#0 {main}
+  thrown in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 23" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 18:34:48 [error] 1808#15332: *1 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class 'authorizationMiddleware' not found in D:\PHPProject\Api.Slim.Framework\src\public\index.php:23
+Stack trace:
+#0 {main}
+  thrown in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 23" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881", referrer: "http://localhost:8881/hello/udin"
+2018/10/06 18:37:01 [error] 1808#15332: *7 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class 'authorizationMiddleware' not found in D:\PHPProject\Api.Slim.Framework\src\public\index.php:23
+Stack trace:
+#0 {main}
+  thrown in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 23" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "GET /api/hello/dun HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 18:39:22 [error] 1808#15332: *15 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class 'helper' not found in D:\PHPProject\Api.Slim.Framework\src\public\index.php:11
+Stack trace:
+#0 D:\PHPProject\Api.Slim.Framework\src\vendor\pimple\pimple\src\Pimple\Container.php(118): {closure}(Object(Slim\Container))
+#1 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Container.php(266): Pimple\Container->offsetGet('helper')
+#2 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Container.php(289): Slim\Container->get('helper')
+#3 D:\PHPProject\Api.Slim.Framework\src\public\index.php(18): Slim\Container->__get('helper')
+#4 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#5 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(41): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#6 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Route.php(325): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 11" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "GET /api/hello/dun HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 19:45:19 [error] 1808#15332: *31 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class 'OAuth2ServerExamples\Repositories\ClientRepository' not found in D:\PHPProject\Api.Slim.Framework\src\public\index.php:27
+Stack trace:
+#0 D:\PHPProject\Api.Slim.Framework\src\vendor\pimple\pimple\src\Pimple\Container.php(118): {closure}(Object(Slim\Container))
+#1 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Container.php(266): Pimple\Container->offsetGet('League\\OAuth2\\S...')
+#2 D:\PHPProject\Api.Slim.Framework\src\public\index.php(85): Slim\Container->get('League\\OAuth2\\S...')
+#3 {main}
+  thrown in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 27" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "GET /access_token HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 19:46:06 [error] 1808#15332: *31 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class 'OAuth2ServerExamples\Repositories\ClientRepository' not found in D:\PHPProject\Api.Slim.Framework\src\public\index.php:29
+Stack trace:
+#0 D:\PHPProject\Api.Slim.Framework\src\vendor\pimple\pimple\src\Pimple\Container.php(118): {closure}(Object(Slim\Container))
+#1 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Container.php(266): Pimple\Container->offsetGet('League\\OAuth2\\S...')
+#2 D:\PHPProject\Api.Slim.Framework\src\public\index.php(87): Slim\Container->get('League\\OAuth2\\S...')
+#3 {main}
+  thrown in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 29" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "GET /access_token HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 19:46:47 [error] 1808#15332: *31 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class 'OAuth2ServerExamples\Repositories\AccessTokenRepository' not found in D:\PHPProject\Api.Slim.Framework\src\public\index.php:28
+Stack trace:
+#0 D:\PHPProject\Api.Slim.Framework\src\vendor\pimple\pimple\src\Pimple\Container.php(118): {closure}(Object(Slim\Container))
+#1 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Container.php(266): Pimple\Container->offsetGet('League\\OAuth2\\S...')
+#2 D:\PHPProject\Api.Slim.Framework\src\public\index.php(85): Slim\Container->get('League\\OAuth2\\S...')
+#3 {main}
+  thrown in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 28" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "GET /access_token HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 19:47:22 [error] 1808#15332: *31 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class 'OAuth2ServerExamples\Repositories\ClientRepository' not found in D:\PHPProject\Api.Slim.Framework\src\public\index.php:27
+Stack trace:
+#0 D:\PHPProject\Api.Slim.Framework\src\vendor\pimple\pimple\src\Pimple\Container.php(118): {closure}(Object(Slim\Container))
+#1 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Container.php(266): Pimple\Container->offsetGet('League\\OAuth2\\S...')
+#2 D:\PHPProject\Api.Slim.Framework\src\public\index.php(85): Slim\Container->get('League\\OAuth2\\S...')
+#3 {main}
+  thrown in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 27" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "GET /access_token HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 19:48:14 [error] 1808#15332: *31 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class 'OAuth2ServerExamples\Repositories\ClientRepository' not found in D:\PHPProject\Api.Slim.Framework\src\public\index.php:27
+Stack trace:
+#0 D:\PHPProject\Api.Slim.Framework\src\vendor\pimple\pimple\src\Pimple\Container.php(118): {closure}(Object(Slim\Container))
+#1 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Container.php(266): Pimple\Container->offsetGet('League\\OAuth2\\S...')
+#2 D:\PHPProject\Api.Slim.Framework\src\public\index.php(85): Slim\Container->get('League\\OAuth2\\S...')
+#3 {main}
+  thrown in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 27" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "GET /access_token HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 19:50:15 [error] 1808#15332: *40 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class 'OAuth2ServerExamples\Repositories\ClientRepository' not found in D:\PHPProject\Api.Slim.Framework\src\public\index.php:27
+Stack trace:
+#0 D:\PHPProject\Api.Slim.Framework\src\vendor\pimple\pimple\src\Pimple\Container.php(118): {closure}(Object(Slim\Container))
+#1 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Container.php(266): Pimple\Container->offsetGet('League\\OAuth2\\S...')
+#2 D:\PHPProject\Api.Slim.Framework\src\public\index.php(85): Slim\Container->get('League\\OAuth2\\S...')
+#3 {main}
+  thrown in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 27" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "GET /access_token HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 19:50:59 [error] 1808#15332: *40 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class 'OAuth2ServerExamples\Repositories\ClientRepository' not found in D:\PHPProject\Api.Slim.Framework\src\public\index.php:27
+Stack trace:
+#0 D:\PHPProject\Api.Slim.Framework\src\vendor\pimple\pimple\src\Pimple\Container.php(118): {closure}(Object(Slim\Container))
+#1 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Container.php(266): Pimple\Container->offsetGet('League\\OAuth2\\S...')
+#2 D:\PHPProject\Api.Slim.Framework\src\public\index.php(85): Slim\Container->get('League\\OAuth2\\S...')
+#3 {main}
+  thrown in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 27" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "GET /access_token HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 19:52:54 [error] 1808#15332: *44 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class 'OAuth2ServerExamples\Repositories\ClientRepository' not found in D:\PHPProject\Api.Slim.Framework\src\public\index.php:27
+Stack trace:
+#0 D:\PHPProject\Api.Slim.Framework\src\vendor\pimple\pimple\src\Pimple\Container.php(118): {closure}(Object(Slim\Container))
+#1 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Container.php(266): Pimple\Container->offsetGet('League\\OAuth2\\S...')
+#2 D:\PHPProject\Api.Slim.Framework\src\public\index.php(85): Slim\Container->get('League\\OAuth2\\S...')
+#3 {main}
+  thrown in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 27" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "GET /access_token HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 19:54:57 [error] 1808#15332: *47 FastCGI sent in stderr: "PHP Fatal error:  Uncaught LogicException: Key path "file://../private.key" does not exist or is not readable in D:\PHPProject\Api.Slim.Framework\src\vendor\league\oauth2-server\src\CryptKey.php:45
+Stack trace:
+#0 D:\PHPProject\Api.Slim.Framework\src\vendor\league\oauth2-server\src\AuthorizationServer.php(104): League\OAuth2\Server\CryptKey->__construct('file://../priva...')
+#1 D:\PHPProject\Api.Slim.Framework\src\public\index.php(41): League\OAuth2\Server\AuthorizationServer->__construct(Object(OAuth2ServerExamples\Repositories\ClientRepository), Object(OAuth2ServerExamples\Repositories\AccessTokenRepository), Object(OAuth2ServerExamples\Repositories\ScopeRepository), '../private.key', 'lxZFUEsBCJ2Yb14...')
+#2 D:\PHPProject\Api.Slim.Framework\src\vendor\pimple\pimple\src\Pimple\Container.php(118): {closure}(Object(Slim\Container))
+#3 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Container.php(266): Pimple\Container->offsetGet('League\\OAuth2\\S...')
+#4 D:\PHPProject\Api.Slim.Framework\src\public\index.php(85): Sl in D:\PHPProject\Api.Slim.Framework\src\vendor\league\oauth2-server\src\CryptKey.php on line 45" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "GET /access_token HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 19:56:15 [error] 1808#15332: *50 FastCGI sent in stderr: "PHP Notice:  Key file "file://D:\PHPProject\Api.Slim.Framework\src\private.key" permissions are not correct, recommend changing to 600 or 660 instead of 666 in D:\PHPProject\Api.Slim.Framework\src\vendor\league\oauth2-server\src\CryptKey.php on line 56" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "GET /access_token HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 19:58:57 [error] 1808#15332: *53 FastCGI sent in stderr: "PHP Notice:  Key file "file://D:/PHPProject/Api.Slim.Framework/src/private.key" permissions are not correct, recommend changing to 600 or 660 instead of 666 in D:\PHPProject\Api.Slim.Framework\src\vendor\league\oauth2-server\src\CryptKey.php on line 56" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "GET /access_token HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 20:00:47 [error] 1808#15332: *56 FastCGI sent in stderr: "PHP Notice:  Key file "file://D:\PHPProject\Api.Slim.Framework\src\public/../private.key" permissions are not correct, recommend changing to 600 or 660 instead of 666 in D:\PHPProject\Api.Slim.Framework\src\vendor\league\oauth2-server\src\CryptKey.php on line 56" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "GET /access_token HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 20:01:02 [error] 1808#15332: *59 FastCGI sent in stderr: "PHP Fatal error:  Uncaught LogicException: Key path "file://D:\PHPProject\Api.Slim.Framework\src\public/../private.keys" does not exist or is not readable in D:\PHPProject\Api.Slim.Framework\src\vendor\league\oauth2-server\src\CryptKey.php:45
+Stack trace:
+#0 D:\PHPProject\Api.Slim.Framework\src\vendor\league\oauth2-server\src\AuthorizationServer.php(104): League\OAuth2\Server\CryptKey->__construct('file://D:\\PHPPr...')
+#1 D:\PHPProject\Api.Slim.Framework\src\public\index.php(42): League\OAuth2\Server\AuthorizationServer->__construct(Object(OAuth2ServerExamples\Repositories\ClientRepository), Object(OAuth2ServerExamples\Repositories\AccessTokenRepository), Object(OAuth2ServerExamples\Repositories\ScopeRepository), 'file://D:\\PHPPr...', 'lxZFUEsBCJ2Yb14...')
+#2 D:\PHPProject\Api.Slim.Framework\src\vendor\pimple\pimple\src\Pimple\Container.php(118): {closure}(Object(Slim\Container))
+#3 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Container.php(266): Pimple\Container->offsetGet('League\\OAuth2\\S...')
+#4 D:\PHPProj in D:\PHPProject\Api.Slim.Framework\src\vendor\league\oauth2-server\src\CryptKey.php on line 45" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "GET /access_token HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 20:01:10 [error] 1808#15332: *59 FastCGI sent in stderr: "PHP Notice:  Key file "file://D:\PHPProject\Api.Slim.Framework\src\public/../private.key" permissions are not correct, recommend changing to 600 or 660 instead of 666 in D:\PHPProject\Api.Slim.Framework\src\vendor\league\oauth2-server\src\CryptKey.php on line 56" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "GET /access_token HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 20:03:37 [error] 1808#15332: *63 FastCGI sent in stderr: "PHP Notice:  Key file "file://D:\PHPProject\Api.Slim.Framework\src\public/../private.key" permissions are not correct, recommend changing to 600 or 660 instead of 666 in D:\PHPProject\Api.Slim.Framework\src\vendor\league\oauth2-server\src\CryptKey.php on line 56" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "GET /access_token HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 20:03:38 [error] 1808#15332: *65 FastCGI sent in stderr: "PHP Notice:  Key file "file://D:\PHPProject\Api.Slim.Framework\src\public/../private.key" permissions are not correct, recommend changing to 600 or 660 instead of 666 in D:\PHPProject\Api.Slim.Framework\src\vendor\league\oauth2-server\src\CryptKey.php on line 56" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "GET /robots.txt HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 20:03:41 [error] 1808#15332: *67 FastCGI sent in stderr: "PHP Notice:  Key file "file://D:\PHPProject\Api.Slim.Framework\src\public/../private.key" permissions are not correct, recommend changing to 600 or 660 instead of 666 in D:\PHPProject\Api.Slim.Framework\src\vendor\league\oauth2-server\src\CryptKey.php on line 56" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "GET /access_token HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 20:04:09 [error] 1808#15332: *69 FastCGI sent in stderr: "PHP Notice:  Key file "file://D:\PHPProject\Api.Slim.Framework\src\public/../private.key" permissions are not correct, recommend changing to 600 or 660 instead of 666 in D:\PHPProject\Api.Slim.Framework\src\vendor\league\oauth2-server\src\CryptKey.php on line 56" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "GET /access_token HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 20:04:55 [error] 1808#15332: *72 FastCGI sent in stderr: "PHP Notice:  Key file "file://D:\PHPProject\Api.Slim.Framework\src\public/../private.key" permissions are not correct, recommend changing to 600 or 660 instead of 666 in D:\PHPProject\Api.Slim.Framework\src\vendor\league\oauth2-server\src\CryptKey.php on line 56" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "GET /access_token HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 20:56:49 [error] 1808#15332: *106 FastCGI sent in stderr: "PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Closure::{closure}() must be an instance of ServerRequestInterface, instance of Slim\Http\Request given in D:\PHPProject\Api.Slim.Framework\src\public\index.php:94
+Stack trace:
+#0 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(41): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Route.php(325): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(114): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Route.php(297): Slim\Route->callMiddlewareStack(Object(Slim\H in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 94" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "POST /access_token HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 21:00:36 [error] 1808#15332: *111 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class 'Stream' not found in D:\PHPProject\Api.Slim.Framework\src\public\index.php:110
+Stack trace:
+#0 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(41): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Route.php(325): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(114): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Route.php(297): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 110" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "POST /access_token HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 21:00:56 [error] 1808#15332: *111 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class 'Stream' not found in D:\PHPProject\Api.Slim.Framework\src\public\index.php:110
+Stack trace:
+#0 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(41): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Route.php(325): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(114): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Route.php(297): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 110" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "POST /access_token HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 21:47:13 [error] 1808#15332: *123 FastCGI sent in stderr: "PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Slim\Http\Message::withBody() must implement interface Psr\Http\Message\StreamInterface, instance of Slim\Http\Request given, called in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 123 and defined in D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Http\Message.php:287
+Stack trace:
+#0 D:\PHPProject\Api.Slim.Framework\src\public\index.php(123): Slim\Http\Message->withBody(Object(Slim\Http\Request))
+#1 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(41): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Route.php(325): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 D:\PHPProject\Api.Slim.Framework\src\v in D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Http\Message.php on line 287" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "POST /viewData HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 21:47:58 [error] 1808#15332: *123 FastCGI sent in stderr: "PHP Warning:  fwrite() expects parameter 2 to be string, object given in D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Http\Stream.php on line 383
+PHP Fatal error:  Uncaught Error: Class 'Stream' not found in D:\PHPProject\Api.Slim.Framework\src\public\index.php:130
+Stack trace:
+#0 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(41): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Route.php(325): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(114): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Route.php(297): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 130" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "POST /viewData HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 21:51:02 [error] 1808#15332: *126 FastCGI sent in stderr: "PHP Notice:  Undefined variable: args in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 123" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "POST /viewData HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 21:51:44 [error] 1808#15332: *126 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Cannot use object of type Slim\Http\Request as array in D:\PHPProject\Api.Slim.Framework\src\public\index.php:123
+Stack trace:
+#0 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(41): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Route.php(325): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(114): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Route.php(297): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 D:\PHPProject\Api.Slim.Framewo in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 123" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "POST /viewData HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 22:21:09 [error] 1808#15332: *130 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class 'Stream' not found in D:\PHPProject\Api.Slim.Framework\src\public\index.php:135
+Stack trace:
+#0 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(41): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Route.php(325): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(114): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Route.php(297): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 135" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "POST /viewData HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 22:22:49 [error] 1808#15332: *132 FastCGI sent in stderr: "PHP Notice:  Undefined variable: body in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 136
+PHP Fatal error:  Uncaught Error: Call to a member function write() on null in D:\PHPProject\Api.Slim.Framework\src\public\index.php:136
+Stack trace:
+#0 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(41): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Route.php(325): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(114): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Route.php(297): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 D:\PHPProject\Api.Slim.Framework\src\vend in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 136" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "POST /viewData HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 22:32:47 [error] 1808#15332: *138 FastCGI sent in stderr: "PHP Warning:  fwrite() expects parameter 2 to be string, object given in D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Http\Stream.php on line 383" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "POST /viewData HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 22:54:25 [error] 11328#8424: *1 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "POST /viewData HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 22:58:18 [error] 11328#8424: *7 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "POST /viewData HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 23:06:21 [error] 15240#5708: *1 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "POST /viewData HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 23:20:04 [error] 12648#8292: *3 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "GET /phpinfo.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 23:21:41 [error] 14900#6012: *1 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "GET /phpinfo.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 23:23:24 [error] 14900#6012: *1 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "GET /phpinfo.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 23:25:27 [error] 9656#3872: *1 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "GET /phpinfo.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/06 23:30:32 [error] 8928#17716: *1 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while connecting to upstream, client: 127.0.0.1, server: slimapi.com, request: "GET /phpinfo.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9001", host: "localhost:8881"
+2018/10/07 00:04:51 [error] 3472#12544: *38 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined method Slim\Container::AuthorizationServer() in D:\PHPProject\Api.Slim.Framework\src\public\index.php:77
+Stack trace:
+#0 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(41): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Route.php(325): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(114): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Route.php(297): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 D:\PHPProject\Api.Sli in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 77" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "POST /access_token HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/07 00:06:35 [error] 3472#12544: *40 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined method Slim\Container::AuthorizationServer() in D:\PHPProject\Api.Slim.Framework\src\public\index.php:77
+Stack trace:
+#0 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(41): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Route.php(325): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(114): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Route.php(297): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 D:\PHPProject\Api.Sli in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 77" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "POST /access_token HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/07 00:08:20 [error] 3472#12544: *40 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined method Slim\Container::server() in D:\PHPProject\Api.Slim.Framework\src\public\index.php:77
+Stack trace:
+#0 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(41): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Route.php(325): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(114): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Route.php(297): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 D:\PHPProject\Api.Slim.Framework\s in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 77" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "POST /access_token HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/07 00:21:51 [error] 3472#12544: *53 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Cannot use object of type Slim\Http\Request as array in D:\PHPProject\Api.Slim.Framework\src\public\index.php:77
+Stack trace:
+#0 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(41): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Route.php(325): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(114): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Route.php(297): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 D:\PHPProject\Api.Slim.Framewor in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 77" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "POST /access_token HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/07 00:50:24 [error] 3472#12544: *74 FastCGI sent in stderr: "PHP Notice:  Undefined property: Slim\App::$ResourceServer in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 171
+PHP Stack trace:
+PHP   1. {main}() D:\PHPProject\Api.Slim.Framework\src\public\index.php:0" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "POST /api/view_data HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/07 00:50:57 [error] 3472#12544: *76 FastCGI sent in stderr: "PHP Notice:  Undefined property: Slim\App::$ResourceServer in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 171
+PHP Stack trace:
+PHP   1. {main}() D:\PHPProject\Api.Slim.Framework\src\public\index.php:0
+PHP Fatal error:  Uncaught Error: Call to a member function validateAuthenticatedRequest() on null in D:\PHPProject\Api.Slim.Framework\src\middleware\AuthorizationMiddleware.php:30
+Stack trace:
+#0 [internal function]: AuthorizationMiddleware->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\Route))
+#1 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(67): call_user_func(Object(AuthorizationMiddleware), Object(Slim\Http\Request), Object(Slim\Http\Response), Object(Slim\Route))
+#2 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(114): Slim\Route->Slim\{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#3 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\Route.php(297): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 D:\PHPProject\Api.Slim.Framework\src\vendor\slim\slim\Slim\App.php(433): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 D:\PHPProj in D:\PHPProject\Api.Slim.Framework\src\middleware\AuthorizationMiddleware.php on line 30" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "GET /api/view_data HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/07 00:51:26 [error] 3472#12544: *76 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Using $this when not in object context in D:\PHPProject\Api.Slim.Framework\src\public\index.php:171
+Stack trace:
+#0 {main}
+  thrown in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 171" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "GET /api/view_data HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/07 01:19:20 [error] 3472#12544: *86 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class 'AuthorizationMiddleware' not found in D:\PHPProject\Api.Slim.Framework\src\public\index.php:174
+Stack trace:
+#0 {main}
+  thrown in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 174" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "GET /api/view_data HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/07 01:20:18 [error] 3472#12544: *86 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class 'AuthorizationMiddleware' not found in D:\PHPProject\Api.Slim.Framework\src\public\index.php:174
+Stack trace:
+#0 {main}
+  thrown in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 174" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "GET /api/view_data HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/07 01:21:13 [error] 3472#12544: *86 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class 'AuthorizationMiddleware' not found in D:\PHPProject\Api.Slim.Framework\src\public\index.php:174
+Stack trace:
+#0 {main}
+  thrown in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 174" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "GET /api/view_data HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/07 01:21:20 [error] 3472#12544: *86 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class 'AuthorizationMiddleware' not found in D:\PHPProject\Api.Slim.Framework\src\public\index.php:174
+Stack trace:
+#0 {main}
+  thrown in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 174" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "GET /api/view_data HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/07 01:23:06 [error] 3472#12544: *91 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class 'AuthorizationMiddleware' not found in D:\PHPProject\Api.Slim.Framework\src\public\index.php:174
+Stack trace:
+#0 {main}
+  thrown in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 174" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "POST /api/auth/access_token HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/07 01:24:42 [error] 3472#12544: *93 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class 'AuthorizationMiddleware' not found in D:\PHPProject\Api.Slim.Framework\src\public\index.php:174
+Stack trace:
+#0 {main}
+  thrown in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 174" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "POST /api/auth/access_token HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
+2018/10/07 01:25:16 [error] 3472#12544: *93 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class 'AuthorizationMiddleware' not found in D:\PHPProject\Api.Slim.Framework\src\public\index.php:174
+Stack trace:
+#0 {main}
+  thrown in D:\PHPProject\Api.Slim.Framework\src\public\index.php on line 174" while reading response header from upstream, client: 127.0.0.1, server: slimapi.com, request: "POST /api/auth/access_token HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost:8881"
