@@ -26,5 +26,5 @@ server {
         fastcgi_index index.php;
 		fastcgi_read_timeout 1020;
         fastcgi_pass 127.0.0.1:9000;
-		}
 	}
+}
